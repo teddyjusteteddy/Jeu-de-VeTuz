@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de VeTuz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu de VeTuz</h1>
+        <p>VeTuz produits : <span id="paperclips">0</span></p>
+        <p>Argent : <span id="money">0</span> $</p>
+        
+        <button id="makePaperclip">Produire un VeTuz</button>
+        <button id="buyUpgrades">Acheter une amélioration (100 VeTuz)</button>
+        <button id="buyMoneyUpgrade">Acheter une amélioration d'argent (200 $)</button>
+        <button id="buyAutoclicker">Acheter un autoclicker (1000 $)</button>
+        <button id="buyAutoclickerUpgrade">Améliorer l'autoclicker (5000 $)</button>
+        
+        <h3 id="autoclickerStatus">Autoclicker : Inactif</h3>
+        <p id="autoclickerCost">Coût de l'autoclicker : 1000 $</p>
+        <p id="autoclickerUpgradeCost">Coût de l'amélioration d'autoclicker : 5000 $</p>
+    </div>
+    
+    <div>
+        <textarea id="dataInput" rows="10" cols="30" placeholder="Entrez vos données ici..."></textarea><br>
+        <button id="saveButton">Sauvegarder</button>
+        <button id="loadButton">Charger</button>
+        <button id="clearButton">Effacer</button>
+        <script src="sauvegarde.js"></script>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
